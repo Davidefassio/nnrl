@@ -2,4 +2,6 @@
 Neural network implementation in JS.
 
 ## Methods overall
-```ciao```
+### Neural network
+```constructor```
+```add_layer```
