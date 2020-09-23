@@ -141,7 +141,7 @@ Input: two 2D matrices.\
 Output: 2D matrix.
 
 ```dotvm(v, m)```\
-Dot product between a vector and a matrix (v x m).\
+Dot product between a vector and a matrix (v x m), the order CANNOT be changed.\
 Input: v = 1D vector, m = 2D matrix.\
 Output: 1D vector.
 
