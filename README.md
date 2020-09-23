@@ -1,5 +1,5 @@
 # nn (Neural network)
-Neural network implementation in JS.
+Neural network and reinforcement learning implementation in JS.
 
 ## Methods overall
 ### Neural network
