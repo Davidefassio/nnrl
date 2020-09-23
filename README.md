@@ -180,4 +180,4 @@ SOFTWARE.
 ```
 
 ## Authos
-Davide Fassio.
+Davide Fassio (@Davidefassio).
