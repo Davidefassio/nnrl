@@ -4,7 +4,6 @@ Neural network and reinforcement learning implementation in JS.
 ## Methods overall
 ### Neural network
 #### This set of methods is what you will use to create and use the neural network.
-
 ```constructor``` Initialize the model and set the learning rate to its default value. No inputs or outputs.
 
 ```add_layer``` Add a neuron layer to the model. Inputs: neurons = number of neurons in that layer (must be > 0), activ_func = a string that contain the name of the activation function used to activate that layer(must be one of these: "none", "relu", "softplus", "sigmoid", "tanh", "softmax"). 
