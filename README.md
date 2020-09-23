@@ -3,7 +3,7 @@ Neural network and reinforcement learning implementation in JS.
 
 ## Methods overall
 ### Neural network
-This set of methods is what you will use to create and use the neural network.
+#### This set of methods is what you will use to create and use the neural network.
 
 ```constructor``` Initialize the model and set the learning rate to its default value. No inputs or outputs.
 
