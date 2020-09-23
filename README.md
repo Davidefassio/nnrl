@@ -2,7 +2,7 @@
 ![alt text](logo.png)
 
 Neural network and reinforcement learning implementation in JS.\
-Still in developing phase.
+Still in developing.
 
 ## Methods overall
 ### Neural network
