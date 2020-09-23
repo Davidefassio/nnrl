@@ -1,4 +1,4 @@
-# nn (Neural network)
+# nnrl (Neural network with reinforcement learning)
 Neural network and reinforcement learning implementation in JS.
 
 ## Methods overall
