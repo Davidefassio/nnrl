@@ -74,7 +74,7 @@ Input: 1D vector. Output: 1D vector.
 
 ```der_softmax(x)```\
 Derivative of softmax. For more detailed info search online.\
-Input: 1D vector. Output: 1D vector.
+Input: 1D vector. Output: 2D matrix.
 
 ### Random generators
 #### Methods used to set up the weights of the model to random values generated accordingly to "Xavier initialization" and "He initialization".
