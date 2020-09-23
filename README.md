@@ -20,11 +20,11 @@ Neural network implementation in JS.
 
 ```softplus``` Smooth version of ReLU. output = ln(1 + exp(input)). Input: 1D vector.
 
-```sigmoid```
+```sigmoid``` Sigmoid function used to scale values in the range = (0, 1). output = 1 / (1 + exp(-input)). Input: 1D vector.
 
-```tanh```
+```tanh``` Hyperbolic tangent function used to scale values in the range = (-1, 1). output = sinh(input)/cosh(input) = (exp(input) - exp(-input)) / (exp(input) + exp(-input)). Input: 1D vector.
 
-```softmax```
+```softmax``` Normalized exponential function also known as softargmax, used to normalize the values to a probability distribution with exponential proportional weight. Input: 1D vector.
 
 ```der_relu```
 
