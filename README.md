@@ -9,7 +9,7 @@ Neural network implementation in JS.
 
 ```set_learning_rate```
 
-```guess```
+```guess``` Return a guess based on the input given. The output and the input must be 1D vector.
 
 ```backprop```
 
