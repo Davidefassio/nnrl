@@ -29,16 +29,16 @@ Neural network and reinforcement learning implementation in JS.
 
 ```softmax``` Normalized exponential function also known as softargmax, used to normalize the values to a probability distribution with exponential proportional weight. Input: 1D vector.
 
-#### All the derivatives of the activation functions take as input a vector (already activated with the same activation function) and return another vector as result.
-```der_relu``` Derivative of ReLU. output = 
+#### All the derivatives of the activation functions take as input a vector (ALREADY ACTIVATED with the same activation function) and return another vector as result.
+```der_relu``` Derivative of ReLU. output = 0 if input <= 0, 1 otherwise. Input: 1D vector. Output: 1D vector.
 
-```der_softplus```
+```der_softplus``` Derivative of softplus. output = 1 - 1/exp(input).  Input: 1D vector. Output: 1D vector.
 
-```der_sigmoid```
+```der_sigmoid``` Derivative of sigmoid. output = input*(1 - input). Input: 1D vector. Output: 1D vector.
 
-```der_tanh```
+```der_tanh``` Derivative of hyperbolic tangent. output = 1 - input^2. Input: 1D vector. Output: 1D vector.
 
-```der_softmax```
+```der_softmax``` Derivative of softmax. For more detailed info search online. Input: 1D vector. Output: 1D vector.
 
 ### Random generators
 #### Methods used to set up the weights of the model to random values generated accordingly to "Xavier initialization" and "He initialization".
