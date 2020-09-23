@@ -201,7 +201,7 @@ class NeuralNetwork{
 
     // Generate a number that follow the normal distribution
     // with mean and standard deviation given.
-    norm_distr(mean, stdev) {
+    norm_distr(mean, stdev){
         let y1, x1, x2, w;
         do{
             x1 = 2 * Math.random() - 1;
