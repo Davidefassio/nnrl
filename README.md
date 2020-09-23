@@ -34,20 +34,20 @@ Input: x = the vector containing the layer to modify, i = the number of the laye
 
 #### All the activation functions take as input a vector and modify it.
 ```relu(x)```\
-ReLU (Rectified Linear Unit). output = max(0, input).\
+ReLU (Rectified Linear Unit). output = max(0, x).\
 Input: 1D vector.
 
 ```softplus(x)```\
-Smooth version of ReLU. output = ln(1 + exp(input)).\
+Smooth version of ReLU. output = ln(1 + exp(x)).\
 Input: 1D vector.
 
 ```sigmoid(x)```\
-Sigmoid function used to scale values in the range = (0, 1). output = 1 / (1 + exp(-input)).\
+Sigmoid function used to scale values in the range = (0, 1). output = 1 / (1 + exp(-x)).\
 Input: 1D vector.
 
 ```tanh(x)```\
 Hyperbolic tangent function used to scale values in the range = (-1, 1).\
-output = sinh(input)/cosh(input) = (exp(input) - exp(-input)) / (exp(input) + exp(-input)).\
+output = sinh(x)/cosh(x) = (exp(x) - exp(-x)) / (exp(x) + exp(-x)).\
 Input: 1D vector.
 
 ```softmax(x)```\
@@ -57,19 +57,19 @@ Input: 1D vector.
 
 #### All the derivatives of the activation functions take as input a vector (ALREADY ACTIVATED with the same activation function) and return another vector as result.
 ```der_relu(x)```\
-Derivative of ReLU. output = 0 if input <= 0, 1 otherwise.\
+Derivative of ReLU. output = 0 if x <= 0, 1 otherwise.\
 Input: 1D vector. Output: 1D vector.
 
 ```der_softplus(x)```\
-Derivative of softplus. output = 1 - 1/exp(input). \
+Derivative of softplus. output = 1 - 1/exp(x). \
 Input: 1D vector. Output: 1D vector.
 
 ```der_sigmoid(x)```\
-Derivative of sigmoid. output = input*(1 - input).\
+Derivative of sigmoid. output = x*(1 - x).\
 Input: 1D vector. Output: 1D vector.
 
 ```der_tanh(x)```\
-Derivative of hyperbolic tangent. output = 1 - input^2.\
+Derivative of hyperbolic tangent. output = 1 - x^2.\
 Input: 1D vector. Output: 1D vector.
 
 ```der_softmax(x)```\
