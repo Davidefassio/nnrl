@@ -12,7 +12,7 @@ Developing phase.
 
 ```set_learning_rate``` Change the learning rate of the model if the number given is > 0. Input: a real number. Output: true if the input is positive and the learning rate is being changed, false otherwise.
 
-```guess``` Return a guess based on the input vector given. Input: 1D vector. Output: 1D vector.
+```guess``` Return a guess based on the input vector given using forward propagation. Input: 1D vector. Output: 1D vector.
 
 ```backprop``` TODO
 
