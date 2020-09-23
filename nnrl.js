@@ -151,10 +151,7 @@ class NeuralNetwork{
     // the same activation function.
     der_relu(x){
         let v = new Array(x.length);
-        for(let i = 0; i < x.length; ++i){
-            if(x[i] == 0){ v[i] = 0; }
-            else{ v[i] = 1; }
-        }
+        for(let i = 0; i < x.length; ++i){ (x[i] == 0) ? v[i] = 0 : v[i] = 1; }
         return v;
     }
 
