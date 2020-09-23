@@ -180,4 +180,4 @@ SOFTWARE.
 ```
 
 ## Authors
-Davide Fassio (@Davidefassio).
+Davide Fassio ([@Davidefassio](https://github.com/Davidefassio)).
