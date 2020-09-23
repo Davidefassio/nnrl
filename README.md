@@ -5,7 +5,7 @@ Neural network implementation in JS.
 ### Neural network
 ```constructor```
 
-```add_layer```
+```add_layer``` Add a neuron layer to the model. The parameters are: neurons = number of neurons in that layer (must be > 0), activ_func = a string that contain the name of the activation function used to activate that layer(must be one of these: "none", "relu", "softplus", "sigmoid", "tanh", "softmax"). 
 
 ```set_learning_rate```
 
