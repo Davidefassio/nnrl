@@ -36,7 +36,7 @@
  *  - mat_subTo
  *  - vec_kmult
  *  - mat_kmult
- *  - dot
+ *  - dotmm
  *  - dotvm
  *  - dotvv
  *  - transpose
@@ -315,7 +315,7 @@ class NeuralNetwork{
     // Dot product between two 2D matrices.
     // #cols m1 MUST BE EQUAL TO #rows m2.
     // Return a 2D matrix (#rows m1 x #cols m2).
-    dot(m1, m2){
+    dotmm(m1, m2){
         if(m1[0].length != m2.length){ return false; }
         let r = m1.length, c = m2[0].length, n = m1[0].length, m = new Array(r);
         for(let i = 0; i < r; ++i){
