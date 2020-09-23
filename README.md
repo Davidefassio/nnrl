@@ -45,30 +45,30 @@ Neural network and reinforcement learning implementation in JS.
 
 ### Linear algebra
 #### A bunch of vector and matrix operation used in the neural network (nothing funny here XD).
-```vec_sum``` Sum two vectors without modifying them and return a vector containing the result.
+```vec_sum``` Sum two vectors without modifying them and return a vector containing the result. Input: two 1D vectors. Output: 1D vector.
 
-```mat_sum``` Sum two matrices without modifying them and return a matrix containing the result.
+```mat_sum``` Sum two matrices without modifying them and return a matrix containing the result. Input: two 2D matrices. Output: 2D matrix.
 
-```vec_sumTo``` Sum the second vector to the first one, the first vector is therefore modified.
+```vec_sumTo``` Sum the second vector to the first one, the first vector is therefore modified. Input: two 1D vectors.
 
-```mat_sumTo``` Sum the second matrix to the first one, the first matrix is therefore modified.
+```mat_sumTo``` Sum the second matrix to the first one, the first matrix is therefore modified. Input: two 2D matrices.
 
-```vec_sub``` Subtract two vectors without modifying them and return a vector containing the result.
+```vec_sub``` Subtract two vectors without modifying them and return a vector containing the result. Input: two 1D vectors. Output: 1D vector.
 
-```mat_sub``` Subtract two matrices without modifying them and return a matrix containing the result.
+```mat_sub``` Subtract two matrices without modifying them and return a matrix containing the result. Input: two 2D matrices. Output: 2D matrix.
 
-```vec_subTo``` Subtarct the second vector to the first one, the first vector is therefore modified.
+```vec_subTo``` Subtarct the second vector to the first one, the first vector is therefore modified. Input: two 1D vectors.
 
-```mat_subTo``` Subtract the second matrix to the first one, the first matrix is therefore modified.
+```mat_subTo``` Subtract the second matrix to the first one, the first matrix is therefore modified. Input: two 2D matrices.
 
-```vec_kmult``` Multiply the whole vector to the real number given, it modifies the vector.
+```vec_kmult``` Multiply the whole vector to the real number given, it modifies the vector. Input: k = real number, v = 1D vector.
 
-```mat_kmult``` Multiply the whole matrix to the real number given, it modifies the matrix.
+```mat_kmult``` Multiply the whole matrix to the real number given, it modifies the matrix. Input: k = real number, m = 2D matrix.
 
-```dotmm``` Dot product between two matrices (m1 x m2).
+```dotmm``` Dot product between two matrices (m1 x m2). Input: two 2D matrices. Output: 2D matrix.
 
-```dotvm``` Dot product between a vector and a matrix (v x m).
+```dotvm``` Dot product between a vector and a matrix (v x m). Input: v = 1D vector, m = 2D matrix. Output: 1D vector.
 
-```dotvv``` Dot product between two vectors (v1 x v2).
+```dotvv``` Dot product between two vectors (v1 x v2). Input: two 1D vectors. Output: real number.
 
-```transpose``` Transpose a 2D matrix modifying it.
+```transpose``` Transpose a 2D matrix modifying it. Input: 2D matrix.
