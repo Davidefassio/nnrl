@@ -13,7 +13,7 @@ No inputs or outputs.
 
 ```add_layer```\
 Add a neuron layer to the model.\
-Inputs: neurons = number of neurons in that layer (must be > 0), activ_func = a string that contain the name of the activation function used to activate that layer(must be one of these: "none", "relu", "softplus", "sigmoid", "tanh", "softmax"). 
+Input: neurons = number of neurons in that layer (must be > 0), activ_func = a string that contain the name of the activation function used to activate that layer(must be one of these: "none", "relu", "softplus", "sigmoid", "tanh", "softmax"). 
 
 ```set_learning_rate```\
 Change the learning rate of the model if the number given is > 0.\
@@ -27,29 +27,53 @@ Output: 1D vector.
 
 ### Activation functions
 #### A bunch of activation functions (funny stuff here), their derivatives and the functions to apply them.
-```activate``` Apply the activation function to the layer. Input: x = the vector containing the layer to modify, i = the number of the layer (0 = input layer, ...).
+```activate```\
+Apply the activation function to the layer.\
+Input: x = the vector containing the layer to modify, i = the number of the layer (0 = input layer, ...).
 
 #### All the activation functions take as input a vector and modify it.
-```relu``` ReLU (Rectified Linear Unit). output = max(0, input). Input: 1D vector.
+```relu```\
+ReLU (Rectified Linear Unit). output = max(0, input).\
+Input: 1D vector.
 
-```softplus``` Smooth version of ReLU. output = ln(1 + exp(input)). Input: 1D vector.
+```softplus```\
+Smooth version of ReLU. output = ln(1 + exp(input)).\
+Input: 1D vector.
 
-```sigmoid``` Sigmoid function used to scale values in the range = (0, 1). output = 1 / (1 + exp(-input)). Input: 1D vector.
+```sigmoid```\
+Sigmoid function used to scale values in the range = (0, 1). output = 1 / (1 + exp(-input)).\
+Input: 1D vector.
 
-```tanh``` Hyperbolic tangent function used to scale values in the range = (-1, 1). output = sinh(input)/cosh(input) = (exp(input) - exp(-input)) / (exp(input) + exp(-input)). Input: 1D vector.
+```tanh```\
+Hyperbolic tangent function used to scale values in the range = (-1, 1).\
+output = sinh(input)/cosh(input) = (exp(input) - exp(-input)) / (exp(input) + exp(-input)).\
+Input: 1D vector.
 
-```softmax``` Normalized exponential function also known as softargmax, used to normalize the values to a probability distribution with exponential proportional weight. Input: 1D vector.
+```softmax```\
+Normalized exponential function also known as softargmax,\
+used to normalize the values to a probability distribution with exponential proportional weight.\
+Input: 1D vector.
 
 #### All the derivatives of the activation functions take as input a vector (ALREADY ACTIVATED with the same activation function) and return another vector as result.
-```der_relu``` Derivative of ReLU. output = 0 if input <= 0, 1 otherwise. Input: 1D vector. Output: 1D vector.
+```der_relu```\
+Derivative of ReLU. output = 0 if input <= 0, 1 otherwise.\
+Input: 1D vector. Output: 1D vector.
 
-```der_softplus``` Derivative of softplus. output = 1 - 1/exp(input).  Input: 1D vector. Output: 1D vector.
+```der_softplus```\
+Derivative of softplus. output = 1 - 1/exp(input). \
+Input: 1D vector. Output: 1D vector.
 
-```der_sigmoid``` Derivative of sigmoid. output = input*(1 - input). Input: 1D vector. Output: 1D vector.
+```der_sigmoid```\
+Derivative of sigmoid. output = input*(1 - input).\
+Input: 1D vector. Output: 1D vector.
 
-```der_tanh``` Derivative of hyperbolic tangent. output = 1 - input^2. Input: 1D vector. Output: 1D vector.
+```der_tanh```\
+Derivative of hyperbolic tangent. output = 1 - input^2.\
+Input: 1D vector. Output: 1D vector.
 
-```der_softmax``` Derivative of softmax. For more detailed info search online. Input: 1D vector. Output: 1D vector.
+```der_softmax```\
+Derivative of softmax. For more detailed info search online.\
+Input: 1D vector. Output: 1D vector.
 
 ### Random generators
 #### Methods used to set up the weights of the model to random values generated accordingly to "Xavier initialization" and "He initialization".
