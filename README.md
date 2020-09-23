@@ -1,8 +1,7 @@
 # nnrl (Neural network with reinforcement learning)
 ![alt text](logo.png)
 
-Neural network and reinforcement learning implementation in JS.
-
+Neural network and reinforcement learning implementation in JS.\
 Developing phase.
 
 ## Methods overall
