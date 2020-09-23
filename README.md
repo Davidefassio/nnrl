@@ -19,7 +19,8 @@ Input: neurons = number of neurons in that layer (must be > 0), activ_func = a s
 Change the learning rate of the model if the number given is > 0.\
 Input: a real number. Output: true if the input is positive and the learning rate is being changed, false otherwise.
 
-```guess``` Return a guess based on the input vector given using forward propagation.\
+```guess```\
+Return a guess based on the input vector given using forward propagation.\
 Input: 1D vector.\
 Output: 1D vector.
 
@@ -77,9 +78,16 @@ Input: 1D vector. Output: 1D vector.
 
 ### Random generators
 #### Methods used to set up the weights of the model to random values generated accordingly to "Xavier initialization" and "He initialization".
-```rand``` Generate a 2D matrix with random values picked from a normal distribution. Input: row = number of rows of the matrix, col = number of columns of the matrix, mean = mean of the distribution, variance = variance of the distribution (variance = stdev ^ 2). Output: 2D matrix.
+```rand```\
+Generate a 2D matrix with random values picked from a normal distribution.\
+Input: row = number of rows of the matrix, col = number of columns of the matrix,\
+mean = mean of the distribution, variance = variance of the distribution (variance = stdev ^ 2).\
+Output: 2D matrix.
 
-```norm_distr``` Generate a number from a normal distribution. Input: mean = mean of the distribution, stdev = standard deviation of the distribution (stdev = sqrt(variance)). Output: a real value number.
+```norm_distr```\
+Generate a number from a normal distribution.\
+Input: mean = mean of the distribution, stdev = standard deviation of the distribution (stdev = sqrt(variance)).\
+Output: a real value number.
 
 ### Linear algebra
 #### A bunch of vector and matrix operation used in the neural network (nothing funny here XD).
