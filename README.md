@@ -1,2 +1,5 @@
-# nn
-Neural network implementation in JS
+# nn (Neural network)
+Neural network implementation in JS.
+
+## Methods overall
+```ciao```
