@@ -7,13 +7,16 @@ Developing phase.
 ## Methods overall
 ### Neural network
 #### This set of methods is what you will use to create and use the neural network.
-```constructor``` Initialize the model and set the learning rate to its default value.\
+```constructor```\
+Initialize the model and set the learning rate to its default value.\
 No inputs or outputs.
 
-```add_layer``` Add a neuron layer to the model.\
+```add_layer```\
+Add a neuron layer to the model.\
 Inputs: neurons = number of neurons in that layer (must be > 0), activ_func = a string that contain the name of the activation function used to activate that layer(must be one of these: "none", "relu", "softplus", "sigmoid", "tanh", "softmax"). 
 
-```set_learning_rate``` Change the learning rate of the model if the number given is > 0.\
+```set_learning_rate```\
+Change the learning rate of the model if the number given is > 0.\
 Input: a real number. Output: true if the input is positive and the learning rate is being changed, false otherwise.
 
 ```guess``` Return a guess based on the input vector given using forward propagation.\
