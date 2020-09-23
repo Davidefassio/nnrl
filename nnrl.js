@@ -1,48 +1,26 @@
 /*
- * Class methods recap.
- *
- * Neural network:
- *  - constructor
- *  - add_layer
- *  - set_learning_rate
- *  - guess
- *  - backprop  (TODO)
- *
- * Activation functions:
- *  - activate
- *  - relu
- *  - softplus
- *  - sigmoid
- *  - tanh
- *  - softmax
- *  - der_relu
- *  - der_softplus
- *  - der_sigmoid
- *  - der_tanh
- *  - der_softmax
- *
- * Random generators:
- *  - rand
- *  - norm_distr
- *
- * Linear algebra:
- *  - vec_sum
- *  - mat_sum
- *  - vec_sumTo
- *  - mat_sumTo
- *  - vec_sub
- *  - mat_sub
- *  - vec_subTo
- *  - mat_subTo
- *  - vec_kmult
- *  - mat_kmult
- *  - dotmm
- *  - dotvm
- *  - dotvv
- *  - transpose
- */
+    MIT License
 
-// Ancora da aggiungere tutta la parte sul RL.
+    Copyright (c) 2020 Davide Fassio
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+*/
 
 class NeuralNetwork{
     // NEURAL NETWORK ##########################################################
