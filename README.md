@@ -15,8 +15,10 @@ Neural network and reinforcement learning implementation in JS.
 ```backprop``` TODO
 
 ### Activation functions
+#### A bunch of activation functions (funny stuff here), their derivatives and the functions to apply them.
 ```activate``` Apply the activation function to the layer. Input: x = the vector containing the layer to modify, i = the number of the layer (0 = input layer, ...).
 
+#### All the activation functions take as input a vector and modify it.
 ```relu``` ReLU (Rectified Linear Unit). output = max(0, input). Input: 1D vector.
 
 ```softplus``` Smooth version of ReLU. output = ln(1 + exp(input)). Input: 1D vector.
@@ -27,6 +29,7 @@ Neural network and reinforcement learning implementation in JS.
 
 ```softmax``` Normalized exponential function also known as softargmax, used to normalize the values to a probability distribution with exponential proportional weight. Input: 1D vector.
 
+#### All the derivatives of the activation functions take as input a vector (already activated with the same activation function) and return another vector as result.
 ```der_relu```
 
 ```der_softplus```
