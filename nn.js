@@ -73,11 +73,13 @@ class NeuralNetwork{
         this.activation_funcs.push(activ_func);
     }
 
-    // Set the learning rate if it's greater than 0,
-    // otherwise set the default.
+    // Set the learning rate if it's greater than 0.
     set_learning_rate(l){
-        if(l > 0){ this.learning_rate = l; }
-        else{ this.learning_rate = 0.1; } // Default
+        if(l > 0){ 
+            this.learning_rate = l; 
+            return true;
+        }
+        return false;
     }
 
     // Guess and return an output given the input.
