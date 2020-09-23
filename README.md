@@ -38,15 +38,13 @@ Neural network and reinforcement learning implementation in JS.
 ```der_softmax```
 
 ### Random generators
-Methods used to set up the weights of the model to random values generated accordingly to "Xavier initialization" and "He initialization".
-
+#### Methods used to set up the weights of the model to random values generated accordingly to "Xavier initialization" and "He initialization".
 ```rand``` Generate a 2D matrix with random values picked from a normal distribution. Input: row = number of rows of the matrix, col = number of columns of the matrix, mean = mean of the distribution, variance = variance of the distribution (variance = stdev ^ 2). Output: 2D matrix.
 
 ```norm_distr``` Generate a number from a normal distribution. Input: mean = mean of the distribution, stdev = standard deviation of the distribution (stdev = sqrt(variance)). Output: a real value number.
 
 ### Linear algebra
-A bunch of vector and matrix operation used in the neural network (nothing funny here XD).
-
+#### A bunch of vector and matrix operation used in the neural network (nothing funny here XD).
 ```vec_sum``` Sum two vectors without modifying them and return a vector containing the result.
 
 ```mat_sum``` Sum two matrices without modifying them and return a matrix containing the result.
