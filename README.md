@@ -37,9 +37,9 @@ Neural network implementation in JS.
 ```der_softmax```
 
 ### Random generators
-```rand```
+```rand``` Generate a 2D matrix with random values picked from a normal distribution. Input: row = number of rows of the matrix, col = number of columns of the matrix, mean = mean of the distribution, variance = variance of the distribution (variance = stdev ^ 2). Output: 2D matrix.
 
-```norm_distr```
+```norm_distr``` Generate a number from a normal distribution. Input: mean = mean of the distribution, stdev = standard deviation of the distribution (stdev = sqrt(variance)). Output: a real value number.
 
 ### Linear algebra
 ```vec_sum```
