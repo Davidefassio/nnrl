@@ -153,3 +153,9 @@ Output: real number.
 ```transpose(x)```\
 Transpose a 2D matrix modifying it.\
 Input: 2D matrix.
+
+## License
+MIT License.
+
+## Authos
+Davide Fassio.
