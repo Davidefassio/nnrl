@@ -42,30 +42,30 @@ Neural network implementation in JS.
 ```norm_distr``` Generate a number from a normal distribution. Input: mean = mean of the distribution, stdev = standard deviation of the distribution (stdev = sqrt(variance)). Output: a real value number.
 
 ### Linear algebra
-```vec_sum```
+```vec_sum``` Sum two vectors without modifying them and return a vector containing the result.
 
-```mat_sum```
+```mat_sum``` Sum two matrices without modifying them and return a matrix containing the result.
 
-```vec_sumTo```
+```vec_sumTo``` Sum the second vector to the first one, the first vector is therefore modified.
 
-```mat_sumTo```
+```mat_sumTo``` Sum the second matrix to the first one, the first matrix is therefore modified.
 
-```vec_sub```
+```vec_sub``` Subtract two vectors without modifying them and return a vector containing the result.
 
-```mat_sub```
+```mat_sub``` Subtract two matrices without modifying them and return a matrix containing the result.
 
-```vec_subTo```
+```vec_subTo``` Subtarct the second vector to the first one, the first vector is therefore modified.
 
-```mat_subTo```
+```mat_subTo``` Subtract the second matrix to the first one, the first matrix is therefore modified.
 
-```vec_kmult```
+```vec_kmult``` Multiply the whole vector to the real number given, it modifies the vector.
 
-```mat_kmult```
+```mat_kmult``` Multiply the whole matrix to the real number given, it modifies the matrix.
 
-```dotmm```
+```dotmm``` Dot product between two matrices (m1 x m2).
 
-```dotvm```
+```dotvm``` Dot product between a vector and a matrix (v x m).
 
-```dotvv```
+```dotvv``` Dot product between two vectors (v1 x v2).
 
-```transpose```
+```transpose``` Transpose a 2D matrix modifying it.
