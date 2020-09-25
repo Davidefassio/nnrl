@@ -19,6 +19,8 @@ Input: neurons = number of neurons in that layer (must be > 0), activ_func = a s
 Change the learning rate of the model if the number given is > 0.\
 Input: a real number. Output: true if the input is positive and the learning rate is being changed, false otherwise.
 
+```set_loss_function(f)```
+
 ```guess(input)```\
 Return a guess based on the input vector given using forward propagation.\
 Input: 1D vector.\
@@ -26,13 +28,19 @@ Output: 1D vector.
 
 ```backprop``` TODO
 
+### Loss functions (cost functions)
+```mse(y_err, y_cor)```
+
+```log_loss(y_err, y_cor)```
+
 ### Activation functions
 #### A bunch of activation functions (funny stuff here), their derivatives and the functions to apply them.
 ```activate(x, i)```\
 Apply the activation function to the layer.\
 Input: x = the vector containing the layer to modify, i = the number of the layer (0 = input layer, ...).
 
-#### All the activation functions take as input a vector and modify it.
+```linear(x)```
+
 ```relu(x)```\
 ReLU (Rectified Linear Unit). output = max(0, x).\
 Input: 1D vector.
@@ -55,7 +63,9 @@ Normalized exponential function also known as softargmax,\
 used to normalize the values to a probability distribution with exponential proportional weight.\
 Input: 1D vector.
 
-#### All the derivatives of the activation functions take as input a vector (ALREADY ACTIVATED with the same activation function) and return another vector as result.
+#### All the derivatives of the activation functions take as input a vector ALREADY ACTIVATED with the same activation function.
+```der_linear(x)
+
 ```der_relu(x)```\
 Derivative of ReLU. output = 0 if x <= 0, 1 otherwise.\
 Input: 1D vector. Output: 1D vector.
@@ -91,49 +101,57 @@ Output: a real value number.
 
 ### Linear algebra
 #### A bunch of vector and matrix operation used in the neural network (nothing funny here XD).
-```vec_sum(v1, v2)```\
+```v_sumAll(v)```
+
+```m_sumAll(m)```
+
+```v_sum(v1, v2)```\
 Sum two vectors without modifying them and return a vector containing the result.\
 Input: two 1D vectors.\
 Output: 1D vector.
 
-```mat_sum(m1, m2)```\
+```m_sum(m1, m2)```\
 Sum two matrices without modifying them and return a matrix containing the result.\
 Input: two 2D matrices.\
 Output: 2D matrix.
 
-```vec_sumTo(v, v2)```\
+```v_sumTo(v, v2)```\
 Sum the second vector to the first one, the first vector is therefore modified.\
 Input: two 1D vectors.
 
-```mat_sumTo(m, m2)```\
+```m_sumTo(m, m2)```\
 Sum the second matrix to the first one, the first matrix is therefore modified.\
 Input: two 2D matrices.
 
-```vec_sub(v1, v2)```\
+```v_sub(v1, v2)```\
 Subtract two vectors without modifying them and return a vector containing the result.\
 Input: two 1D vectors.\
 Output: 1D vector.
 
-```mat_sub(m1, m2)```\
+```m_sub(m1, m2)```\
 Subtract two matrices without modifying them and return a matrix containing the result.\
 Input: two 2D matrices.\
 Output: 2D matrix.
 
-```vec_subTo(v, v2)```\
+```v_subTo(v, v2)```\
 Subtarct the second vector to the first one, the first vector is therefore modified.\
 Input: two 1D vectors.
 
-```mat_subTo(m, m2)```\
+```m_subTo(m, m2)```\
 Subtract the second matrix to the first one, the first matrix is therefore modified.\
 Input: two 2D matrices.
 
-```vec_kmult(k, v)```\
+```v_kmult(v, k)```\
 Multiply the whole vector to the real number given, it modifies the vector.\
-Input: k = real number, v = 1D vector.
+Input: v = 1D vector, k = real number.
 
-```mat_kmult(k, m)```\
+```m_kmult(m, k)```\
 Multiply the whole matrix to the real number given, it modifies the matrix.\
-Input: k = real number, m = 2D matrix.
+Input: m = 2D matrix, k = real number.
+
+```v_kpow(v, k)```
+
+```m_kpow(m, k)```
 
 ```dotmm(m1, m2)```\
 Dot product between two matrices (m1 x m2).\
