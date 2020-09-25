@@ -64,7 +64,7 @@ used to normalize the values to a probability distribution with exponential prop
 Input: 1D vector.
 
 #### All the derivatives of the activation functions take as input a vector ALREADY ACTIVATED with the same activation function.
-```der_linear(x)
+```der_linear(x)```
 
 ```der_relu(x)```\
 Derivative of ReLU. output = 0 if x <= 0, 1 otherwise.\
