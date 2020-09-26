@@ -33,7 +33,7 @@ class NeuralNetwork{
         this.weights = [];
         this.activation_funcs = [];
         this.learning_rate = 0.1; // Default value.
-		this.loss_func = "mse";   // Default loss function.
+	this.loss_func = "mse";   // Default loss function.
     }
 
     // Add a layer of neurons to the model.
