@@ -100,7 +100,7 @@ class NeuralNetwork{
 		for(let i = 1; i < l; ++i){
 			c += Math.pow(y_err[i] - y_cor[i], 2);
 		}
-		return c / l;
+		return c / (2 * l);
 	}
 
 	// Binary cross entropy loss.
